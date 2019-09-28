@@ -15,6 +15,10 @@ public class P03_Salarios {
 			System.out.println("Digite o salario: ");
 			salario = sc.nextDouble();
 			
+			if(salario < 0) {
+				break;
+			}
+			
 			somaSalarios = somaSalarios + salario;
 		} while(salario > 0);
 		
